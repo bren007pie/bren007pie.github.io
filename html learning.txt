@@ -1,0 +1,22 @@
+Head and body of the HTML file is differnet
+So the header references some stuff that is in the body of the file
+I think the header is so you can setup items
+h1 = header 1
+
+Can do inline
+garbage
+
+everything at the top (this way)
+
+Best way for presentation is seperate CSS sheets that go through HTML
+
+Using VS code
+
+HTML/CSS Style Guide
+https://google.github.io/styleguide/htmlcssguide.html
+
+
+https://www.w3schools.com/html/html_css.asp
+
+
+https://www.w3schools.com/html/html5_syntax.asp
