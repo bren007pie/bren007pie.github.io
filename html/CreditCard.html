@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+
+<p id="demo"></p>
+<form id="CreditCard" >
+Input Credit Number:
+<input type="text" id="CreditNum" oninput="CreditValid.innerText=''" >
+<input type="button" onclick="isValidCreditCard(CreditNum.value)" value="Test">
+<input type="button" onclick="check()" value="TestAll">
+</form>
+<p id="CreditValid"></p>
+
+
+<script>
+document.getElementById("demo").innerHTML = "Credit Card Validity Tester";
+
+var result = /0/
+function check(){
+    // Add test cases to perform multiple tests using TestAll
+    isValidCreditCard('123456');
+    isValidCreditCard('7992739871');  // Test card, passes LuhnCheckSum but not a card
+    isValidCreditCard('5501234567890122');  // MasterCard
+    isValidCreditCard('4501234567890125');  // Visa 16 digit
+    isValidCreditCard('4501234567892');  // Visa 13 Digit
+    isValidCreditCard('340123456789014');  // American Express
+    // should be:
+    // Invalid!Invalid!Valid!Valid!Valid!Valid!
+}
+
+
+    
+function isValidCreditCard(sText) {
+    // Define the 3 regular expressions reMasterCard, reVisa, and reAmericanExpr
+    // reMasterCard   = [51|52|53|54|55][0-9]{14}
+    // reVisa         = 4[0-9]{12,15}
+    // reAmericanExpr = (34|37)[0-9]{13}
+    //raise NotImplementedError()
+    let reMasterCard = /(51|52|53|54|55)[0-9]{14}/
+    let reVisa = /4[0-9]{12,15}/
+    let reAmericanExpr = /(34|37)[0-9]{13}/    
+    if ((reMasterCard.test(sText) || reVisa.test(sText) ||  reAmericanExpr.test(sText)) && (luhnCheckSum(sText) === 0)) {
+        document.getElementById('CreditValid').innerText += 'Valid!';
+    } else {
+        document.getElementById('CreditValid').innerText += 'Invalid!';
+    }
+}
+
+
+function luhnCheckSum(sCardNum) {
+    var len = sCardNum.length;
+    var parity = (len-2) % 2;
+    var sum = 0;
+    var checksum = 0;
+    //return sCardNum.charAt(len-1)
+    
+    for (var i = len-2; i >= 0; i--) {
+        var d = parseInt(sCardNum.charAt(i))
+        if (i % 2 == parity) { d *= 2 }
+        if (d > 9) { d -= 9 }
+        sum += d
+    }
+    checksum = (10 - (sum % 10))%10
+
+    if ( checksum == parseInt(sCardNum.charAt(len-1) ) ) {
+        return 0
+    } else {
+        return 1
+    }
+    
+
+}
+</script>
