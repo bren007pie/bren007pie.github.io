@@ -29,3 +29,26 @@ TODO: top website software to try out instead of VScode and HTML
 - Figma
 - Try Squarespace
 - ChatGPT by feeding resume and then asking to generate a resume website
+
+
+Tuesday October 11, 2023
+- Programming Note: In VScode you can use Emmit in visual studio to do HTML tags:
+	alt + click = multiple cursors before each word
+	ctrl+shift+ → = go over one word for each cursor
+	ctrl + shift + p = command pallet
+	Search Emmet wrap
+	Enter "b" for bold, "i" for italics, "u" for underline
+	"a[href=www.google.com]" = href at address
+	"element[attr=value]" = in general for element and attribute
+	
+
+	[ https://youtu.be/ytL1aaXjkxU?si=f_pgZmg2MnZnWIVb ]
+	[https://stackoverflow.com/questions/37183884/adding-url-into-a-href-with-emmet]
+
+	- here's a cheat sheat: https://docs.emmet.io/cheat-sheet/
+
+	- Can create a keyboard shortcut for this (maybe ctrl+shift+B): https://stackoverflow.com/questions/57598673/vs-code-create-keyboard-shortcuts-for-bold-italics-underline
+	^make sure to sync this
+
+	- Emmet tags/abreviations/snippits can apply to any tag/snippit based things!
+	[ https://code.visualstudio.com/docs/editor/emmet#_emmet-abbreviations-in-other-file-types ]
