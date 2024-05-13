@@ -1,0 +1,57 @@
+Alex Questions
+Wed. Nov 8, 2023
+Post Runes Series 2 with Will
+
+the themes I have on my sites:
+- PokeHexDex is using Adventurer (it has full site editing, a bit more of a time investment to learn and become familiar with, and if you're just looking for a basic site to have a portfolio/profile about yourself, this one may be overkill) - https://pokehexdex.wordpress.com/
+- portfolio site is using Revelar - it is a lot simpler, doesn't have all the functionality but for me it's enough for a simple profile site - https://alexandercourt.wordpress.com/
+- VQL is using Dyad 2 - it's also pretty basic, I liked it for the header images - https://virtualquidditch.wordpress.com/
+
+But there are also tons of other themes that would also work just as well
+
+
+
+Q) Pattern vs template?
+	no theme edits, no layout changes
+	Revelar 
+
+- classic view better
+- appearance > customize > homepage settings > static page > About me (set home page)
+- Wordpress.com logo
+- Single colour theme
+- Headers = Josefin Sans, base font = railway
+	Like titles all caps
+- Menus: Primary > Menu, take pages to ed
+	Can add pages on there
+	Can drag around hirarch
+- make primary menu (only place)
+- CSS class, paid plans get CSS editor
+	pay for CSS
+- Content options = for blogs
+	check off
+- Widget = area with block of content applies across whole site
+	 Widget areas = e.g.  widgets in footer for footer
+- Can only embedd Google stuff
+- Widget, auto adds to footer widgets
+- everything published if make front page
+- Appearence > Customze
+- couple ways to edit:
+	edit
+	view > edit button
+- Lines give the main things
+- Can switch between HTML and visual editor
+- Colours is way off to the side
+	can add colours
+- add with plus button
+- Classic wordpress editor
+- 6 dogs is a drag, pump up and down
+- NO paid AI, Vic, Grammarly
+- AI can write
+- update, then wordpress logo
+- Link to games in this format
+- page icons take first thing
+- Quick buttons to change groups of things
+
+- copy paste content (formats)
+
+I) Icon from EPTA
