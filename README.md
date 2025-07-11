@@ -1,2 +1,2 @@
-# Websitebuilding
-Having fun learning building and designing websites. For portfollio site &amp; 13 Hollywood Productions
+# Website Building
+Portfolio website while learning how to work with static HTML/CSS. Also, a host for my resume!
